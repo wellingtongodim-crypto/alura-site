@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Primeira Interação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bem-vindo à minha página!</h1>
+    <p>Clique no botão abaixo para interagir.</p>
+
+    <button onclick="cumprimentar()">Clique aqui</button>
+
+    <script>
+        function cumprimentar() {
+            alert("Olá! Você realizou sua primeira interação no site!");
+        }
+    </script>
+</body>
+</html>
