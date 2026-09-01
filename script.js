@@ -43,3 +43,30 @@ botoesLike.forEach(function (botao) {
     }
   });
 });
+// Alternância do Tema (Claro / Escuro)
+const btnTema = document.getElementById("btn-tema");
+
+if (btnTema) {
+  btnTema.addEventListener("click", function () {
+    document.body.classList.toggle("tema-escuro");
+  });
+}
+
+// Funcionalidade de Curtir / Descurtir individual por botão
+const botoesLike = document.querySelectorAll(".btn-like");
+
+botoesLike.forEach(function (botao) {
+  let curtiu = false;
+
+  botao.addEventListener("click", function () {
+    let texto = botao.querySelector("span");
+
+    if (curtiu === false) {
+      texto.textContent++;
+      curtiu = true;
+    } else {
+      texto.textContent--;
+      curtiu = false;
+    }
+  });
+});
